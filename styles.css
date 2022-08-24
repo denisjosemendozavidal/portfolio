@@ -8,7 +8,7 @@
 :root {
     --whitebg: #FEFBF6;
     --purple: #A66CFF;
-    --darkerwhite: #F9F5F2;
+    --darkerwhite: #F9F2ED;
 }
 
 body {
@@ -17,26 +17,29 @@ body {
     background-color: var(--whitebg);
 }
 
-nav {
-    display: flex;
-    justify-content: center;
-    gap: 3%;
-    padding-top: 2%;
-    position: fixed;
-    width: 100%;
-}
-
 a {
     text-decoration: none;
     color: black;
 }
 
 .container-everything {
-    width: 80%;
-    height: 100%; 
+    height: fit-content; 
     background-color: var(--darkerwhite) ;
     border-radius: 3%;
+    margin-left: 20%;
+    margin-right: 20%;
 }
+
+nav {
+    display: flex;
+    justify-content:center ;
+    gap:5%;
+    padding: 2%;
+    position: fixed;
+    width: 60%;
+}
+
+
 
 #Hi {
     display: flex;
@@ -62,7 +65,8 @@ a {
     }
     
         .worktitleandintroandsocial .worktitle {
-            padding-top: 1%;
+            padding-top: 10%;
+            
         }
 
         .worktitleandintroandsocial .introduction {
@@ -157,6 +161,7 @@ a {
     gap: 5%;  
     padding-top: 3%; 
     text-align: center;
+    padding-bottom: 5%;
 }
 
     .contactmeicons {
