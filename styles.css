@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -21,6 +22,8 @@ nav {
     justify-content: center;
     gap: 3%;
     padding-top: 2%;
+    position: fixed;
+    width: 100%;
 }
 
 a {
@@ -32,13 +35,14 @@ a {
     width: 80%;
     height: 100%; 
     background-color: var(--darkerwhite) ;
+    border-radius: 3%;
 }
 
 #Hi {
     display: flex;
     justify-content: center;
     gap: 5%;  
-    padding-top: 3%; 
+    padding-top: 6%; 
 
 }
     .selfie {
