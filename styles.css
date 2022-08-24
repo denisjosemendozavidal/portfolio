@@ -24,7 +24,7 @@ a {
 
 .container-everything {
     height: fit-content; 
-    background-color: var(--darkerwhite) ;
+    background-color: var(--darkerwhite);
     border-radius: 3%;
     margin-left: 20%;
     margin-right: 20%;
@@ -37,9 +37,8 @@ nav {
     padding: 2%;
     position: fixed;
     width: 60%;
+    background-color: var(--darkerwhite) ;
 }
-
-
 
 #Hi {
     display: flex;
@@ -49,10 +48,16 @@ nav {
 
 }
     .selfie {
-        width: 30%;
-        justify-content: right;
+        justify-content: center;
         display: flex;
+        width: 50%;
+        height: ;
     }
+
+        .pic {
+            height: 50%;
+        }
+
 
     .worktitleandintroandsocial {
         display: flex;
@@ -61,12 +66,11 @@ nav {
         align-content: space-between;
         width: 30%;
         text-align: center;
-
     }
     
         .worktitleandintroandsocial .worktitle {
             padding-top: 10%;
-            
+
         }
 
         .worktitleandintroandsocial .introduction {
