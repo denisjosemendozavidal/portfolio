@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --whitebg: #FEFBF6;
+    --purple: #A66CFF;
+    --darkerwhite: #F9F5F2;
+}
+
+body {
+    width: fit-content;
+    height: max-content;
+    background-color: var(--whitebg);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+    padding-top: 2%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.container-everything {
+    width: 80%;
+    height: 100%; 
+    background-color: var(--darkerwhite) ;
+}
+
+#Hi {
+    display: flex;
+    justify-content: center;
+    gap: 5%;  
+    padding-top: 3%; 
+
+}
+    .selfie {
+        width: 30%;
+        justify-content: right;
+        display: flex;
+    }
+
+    .worktitleandintroandsocial {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: space-between;
+        width: 30%;
+        text-align: center;
+
+    }
+    
+        .worktitleandintroandsocial .worktitle {
+            padding-top: 1%;
+        }
+
+        .worktitleandintroandsocial .introduction {
+            padding-top: 3%;
+            width: 50%;
+        }
+
+        .worktitleandintroandsocial .socialmedia {
+            padding-top: 3%;
+            display: flex;
+            gap: 10%;
+            align-content: center;
+            width: 50%;
+            
+        }
+
+        .worktitleandintroandsocial .contactmebuttons {
+            padding-top: 3%;
+            display: flex;
+            justify-content: center;
+            gap: 3%;
+        }
+
+
+#Background {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5%;  
+    padding-top: 3%; 
+    text-align: center;
+}
+
+    #Background > h2 {
+        
+    }
+    
+    .backgroundtext {
+        margin-left: 25%;
+        margin-right: 25%;
+        padding-top: 1%;
+    } 
+
+#Experience {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 5%;  
+    padding-top: 3%; 
+    text-align: center;
+}
+
+
+#Other {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5%;  
+    padding-top: 3%; 
+    text-align: center;
+}
+
+    .theotherjobs {
+        display: flex;
+        flex-direction: row;
+        gap: 5%;
+        margin-left: 25%;
+        margin-right: 25%;
+        padding-top: 2%;
+    }
+
+        .loaalss {
+            padding-top: 1%;
+            width: 30%;
+        }
+
+        .gototruckers {
+            padding-top: 1%;
+            width: 30%;
+        }
+
+        .entrepreneur {
+            padding-top: 1%;
+            width: 30%;
+        }
+
+#Contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5%;  
+    padding-top: 3%; 
+    text-align: center;
+}
+
+    .contactmeicons {
+        display: flex;
+        justify-content: center;
+        gap: 5%;
+        padding-top: 2%;
+    }
+
+    
+        
+
+
