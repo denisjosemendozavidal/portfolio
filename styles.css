@@ -43,19 +43,19 @@ nav {
 #Hi {
     display: flex;
     justify-content: center;
-    gap: 5%;  
+    gap: 1%;  
     padding-top: 6%; 
 
 }
     .selfie {
         justify-content: center;
         display: flex;
-        width: 50%;
-        height: ;
+        /*width: 50%;*/
+        height: 441px;
     }
 
         .pic {
-            height: 50%;
+          
         }
 
 
