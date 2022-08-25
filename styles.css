@@ -51,6 +51,7 @@ nav {
     .nav:hover {
         background-color:white;
         font-size: xx-large;
+        border-radius: 20%;
     } 
 
 #Hi {
