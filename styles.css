@@ -44,10 +44,13 @@ nav {
     justify-content:center ;
     align-items: center;
     gap:5%;
-    padding: 2%;
+    padding: 1%;
     position: fixed;
     width: 60%;
+    background-color: #00000030;
+    border-radius: 30%;
 }
+
 
     .nav:hover {
         background-color:white;
@@ -219,8 +222,10 @@ nav {
         justify-content:left ;
         align-items: center;
         position: fixed;
-        width: 100%;
+        width: 80%;
         gap: 3%;
+        background-color: #00000030;
+        border-radius: 30%;
     }
 
         .nav:hover {
@@ -373,7 +378,7 @@ nav {
         position: static;
         width: 100%;
         gap: 3%;
-        visibility: collapse;
+        visibility: hidden;
         
     }
 
@@ -389,6 +394,7 @@ nav {
             width: 100%;
             text-align: center;
             font-size: xx-large;
+            cursor: pointer;
         }
 
         
