@@ -11,6 +11,7 @@
     --whitebg: #FEFBF6;
     --purple: #A66CFF;
     --darkerwhite: #F9F2ED;
+    --bgfornav: #00000030; 
 }
 
 body {
@@ -53,7 +54,11 @@ nav {
         font-size: xx-large;
         border-radius: 20%;
         transition: 1s;
-    } 
+    }
+    
+    .burger {
+        visibility: hidden;
+    }
 
 #Hi {
     display: flex;
@@ -350,19 +355,31 @@ nav {
     
     nav {
         display: flex;
+        flex-direction: column;
         justify-content:left ;
         align-items: center;
-        position: fixed;
+        position: static;
         width: 100%;
         gap: 3%;
+        visibility: collapse;
+        
     }
 
-        .nav:hover {
-            background-color:white;
-            font-size: large;
-            border-radius: 20%;
-            transition: 1s;
-        } 
+        .nav{
+            padding: 1%;
+        }
+
+        .burger {
+            visibility: visible;
+            align-self: center;
+            justify-content: center;
+            display: block;
+            width: 100%;
+            text-align: center;
+            font-size: xx-large;
+        }
+
+        .burger
 
     #Hi {
         display: flex;
