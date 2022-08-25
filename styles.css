@@ -458,21 +458,25 @@ nav {
             margin-left: 0%;
             margin-right: 0%;
             padding-top: 2%;
+            margin-right: 1%;
         }
         
         .loaalss {
             padding-top: 3%;
             width: 100%;
+            margin-right: 3%;
         }
 
         .gototruckers {
             padding-top: 3%;
             width: 100%;
+            margin-right: 3%;
         }
 
         .entrepreneur {
             padding-top: 3%;
             width: 100%;
+            margin-right: 3%;
         }
 
 }
