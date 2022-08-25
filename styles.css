@@ -52,8 +52,7 @@ nav {
 }
 
 
-    .nav:hover {
-        background-color:white;
+    .nav:hover a {
         font-size: xx-large;
         border-radius: 20%;
         transition: 1s;
@@ -228,12 +227,11 @@ nav {
         border-radius: 30%;
     }
 
-        .nav:hover {
-            background-color:white;
+        .nav:hover a {
             font-size: x-large;
             border-radius: 20%;
             transition: 1s;
-        } 
+        }
 
     #Hi {
         display: flex;
@@ -371,16 +369,22 @@ nav {
     }
     
     nav {
-        display: flex;
-        flex-direction: column;
-        justify-content:left ;
-        align-items: center;
-        position: static;
-        width: 100%;
-        gap: 3%;
-        visibility: hidden;
-        
+        transform: translateX(200%);
+        transition: transform 0.5s;
+        display: none;
     }
+
+        .nav__show {
+            transform: translateX(0);
+            display: block;
+            display: flex;
+            flex-direction: column;
+            justify-content:left ;
+            align-items: center;
+            position: static;
+            width: 100%;
+            gap: 3%;
+        }
 
         .nav{
             padding: 1%;
