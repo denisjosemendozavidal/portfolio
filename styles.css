@@ -24,20 +24,22 @@ a {
 
 .container-everything {
     height: fit-content; 
-    background-color: var(--darkerwhite);
+    /*background-color: var(--darkerwhite);*/
     border-radius: 3%;
     margin-left: 20%;
     margin-right: 20%;
+    background-image: url(/images/patternbg.jpg);
 }
 
 nav {
     display: flex;
     justify-content:center ;
+    align-items: center;
     gap:5%;
     padding: 2%;
     position: fixed;
     width: 60%;
-    background-color: var(--darkerwhite) ;
+    background-color:;
 }
 
 #Hi {
