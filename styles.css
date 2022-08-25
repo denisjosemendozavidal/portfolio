@@ -52,6 +52,7 @@ nav {
         background-color:white;
         font-size: xx-large;
         border-radius: 20%;
+        transition: 1s;
     } 
 
 #Hi {
@@ -205,6 +206,13 @@ nav {
         gap: 3%;
     }
 
+        .nav:hover {
+            background-color:white;
+            font-size: x-large;
+            border-radius: 20%;
+            transition: 1s;
+        } 
+
     #Hi {
         display: flex;
         justify-content: center;
@@ -348,6 +356,13 @@ nav {
         width: 100%;
         gap: 3%;
     }
+
+        .nav:hover {
+            background-color:white;
+            font-size: large;
+            border-radius: 20%;
+            transition: 1s;
+        } 
 
     #Hi {
         display: flex;
