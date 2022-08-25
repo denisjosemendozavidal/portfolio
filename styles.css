@@ -108,6 +108,18 @@ nav {
             gap: 3%;
         }
 
+            .Linkedinicon:hover {
+               font-size: larger;
+            }
+
+            .githubicon:hover {
+                font-size: larger;
+            }
+
+            .whatsappicon:hover {
+                font-size: larger;
+            }
+
 
 #Background {
     display: flex;
@@ -379,7 +391,7 @@ nav {
             font-size: xx-large;
         }
 
-        .burger
+        
 
     #Hi {
         display: flex;
