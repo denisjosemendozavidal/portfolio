@@ -368,27 +368,29 @@ nav {
         background-image: url(/images/patternbg.jpg);
     }
     
+    .nav__show {
+        transform: translateX(0);
+        display: flex;
+        flex-direction: column;
+        justify-content:left;
+        align-items: center;
+        position: static;
+        width: 100%;
+        gap: 3%;
+    }
+    
+    
     nav {
-        transform: translateX(200%);
-        transition: transform 0.5s;
+        transform: translateX(-200%);
+        transition: display 3s;
         display: none;
     }
 
-        .nav__show {
-            transform: translateX(0);
-            display: block;
-            display: flex;
-            flex-direction: column;
-            justify-content:left ;
-            align-items: center;
-            position: static;
-            width: 100%;
-            gap: 3%;
-        }
-
-        .nav{
+        nav > ul {
             padding: 1%;
         }
+
+       
 
         .burger {
             visibility: visible;
