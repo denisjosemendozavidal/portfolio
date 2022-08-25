@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+
 * {
     margin: 0;
     padding: 0;
@@ -20,6 +22,12 @@ body {
 a {
     text-decoration: none;
     color: black;
+}
+
+p {
+    line-height: 130%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
 }
 
 .container-everything {
@@ -56,14 +64,8 @@ nav {
     .selfie {
         justify-content: center;
         display: flex;
-        /*width: 50%;*/
         height: 441px;
     }
-
-        .pic {
-          
-        }
-
 
     .worktitleandintroandsocial {
         display: flex;
