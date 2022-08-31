@@ -12,6 +12,14 @@
     --purple: #A66CFF;
     --darkerwhite: #F9F2ED;
     --bgfornav: #00000030; 
+    --aqua: aqua; 
+    --Jacketbrown: #DFBB9D;  
+    --darkblue: #002B5B; 
+}
+
+.darkmode {
+    background-color: var(--darkblue);
+    color: var(--darkerwhite)
 }
 
 body {
@@ -36,7 +44,6 @@ p {
     border-radius: 3%;
     margin-left: 20%;
     margin-right: 20%;
-    background-image: url(/images/patternbg.jpg);
 }
 
 nav {
@@ -47,13 +54,13 @@ nav {
     padding: 1%;
     position: fixed;
     width: 60%;
-    background-color: #00000030;
+    background-color: var(--whitebg);
     border-radius: 30%;
 }
 
 
-    .nav:hover a {
-        font-size: xx-large;
+    .nav a:hover {
+        color: var(--Jacketbrown);
         border-radius: 20%;
         transition: 1s;
     }
@@ -85,17 +92,17 @@ nav {
     }
     
         .worktitleandintroandsocial .worktitle {
-            padding-top: 10%;
-
+            color: var(--Jacketbrown);
+            
         }
 
         .worktitleandintroandsocial .introduction {
-            padding-top: 3%;
+            padding-top: 20%;
             width: 50%;
         }
 
         .worktitleandintroandsocial .socialmedia {
-            padding-top: 3%;
+            padding-top: 40%;
             display: flex;
             gap: 10%;
             align-content: center;
@@ -112,14 +119,17 @@ nav {
 
             .Linkedinicon:hover {
                font-size: larger;
+               color: var(--Jacketbrown);
             }
 
             .githubicon:hover {
                 font-size: larger;
+                color: var(--Jacketbrown);
             }
 
             .whatsappicon:hover {
                 font-size: larger;
+                color: var(--Jacketbrown);
             }
 
 
@@ -130,12 +140,13 @@ nav {
     gap: 5%;  
     padding-top: 3%; 
     text-align: center;
+    width: 100%;
 }
     
     .backgroundtext {
-        margin-left: 25%;
-        margin-right: 25%;
         padding-top: 1%;
+        height: 200px;
+        line-height: 200%;
     } 
 
 #Experience {
@@ -160,26 +171,26 @@ nav {
 
     .theotherjobs {
         display: flex;
-        flex-direction: row;
-        gap: 5%;
-        margin-left: 25%;
-        margin-right: 25%;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10%;
         padding-top: 2%;
+        width: 100%;
     }
 
         .loaalss {
             padding-top: 1%;
-            width: 30%;
+            
         }
 
         .gototruckers {
-            padding-top: 1%;
-            width: 30%;
+            padding-top: 3%;
+            
         }
 
         .entrepreneur {
-            padding-top: 1%;
-            width: 30%;
+            padding-top: 3%;
+            
         }
 
 #Contact {
@@ -213,7 +224,6 @@ nav {
         margin-left: 0%;
         margin-right: 0%;
         border-radius: 3%;
-        background-image: url(/images/patternbg.jpg);
     }
     
     nav {
@@ -223,12 +233,12 @@ nav {
         position: fixed;
         width: 80%;
         gap: 3%;
-        background-color: #00000030;
+        background-color: var(--whitebg);
         border-radius: 30%;
     }
 
-        .nav:hover a {
-            font-size: x-large;
+        .nav a:hover {
+            color: var(--Jacketbrown);
             border-radius: 20%;
             transition: 1s;
         }
@@ -297,13 +307,14 @@ nav {
         gap: 5%;  
         padding-top: 3%; 
         text-align: center;
+        height: 400px;
     }
                     
         .backgroundtext {
-            margin-left: 5%;
-            margin-right: 5%;
             padding-top: 1%;
-        }
+            height: 200px;
+            line-height: 200%;
+        } 
 
     #Other {
         display: flex;
@@ -365,11 +376,9 @@ nav {
         margin-left: 0%;
         margin-right: 0%;
         border-radius: 3%;
-        background-image: url(/images/patternbg.jpg);
     }
     
     .nav__show {
-        /*transform: translateX(0);*/
         display: flex;
         flex-direction: column;
         justify-content:left;
@@ -377,12 +386,13 @@ nav {
         position: static;
         width: 100%;
         gap: 3%;
+        
     }
     
     
     nav {
-        /*transform: translateX(-200%);*/
-        transition: display 3s;
+        
+        
         display: none;
     }
 
@@ -440,7 +450,6 @@ nav {
         
             .worktitleandintroandsocial .worktitle {
                 padding-top: 10%;
-               
                 
             }
     
