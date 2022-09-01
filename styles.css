@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -141,11 +145,12 @@ nav {
     padding-top: 3%; 
     text-align: center;
     width: 100%;
+    height: fit-content;
 }
     
     .backgroundtext {
         padding-top: 1%;
-        height: 200px;
+        height: fit-content;
         line-height: 200%;
     } 
 
@@ -209,7 +214,6 @@ nav {
         gap: 5%;
         padding-top: 2%;
     }
-
 
 @media (max-width: 1050px) {
     body {
@@ -307,13 +311,14 @@ nav {
         gap: 5%;  
         padding-top: 3%; 
         text-align: center;
-        height: 400px;
+        height: fit-content;
     }
                     
         .backgroundtext {
             padding-top: 1%;
             height: 200px;
             line-height: 200%;
+            height: fit-content;
         } 
 
     #Other {
@@ -482,12 +487,14 @@ nav {
         text-align: center;
         margin-left: 1%;
         margin-right: 1%;
+        height: fit-content;
     }
                     
         .backgroundtext {
             margin-left: 0%;
             margin-right: 0%;
             padding-top: 1%;
+            height: fit-content;
         }
 
     #Other {
