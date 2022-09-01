@@ -10,11 +10,26 @@ Burger.addEventListener("click", function () {
  
 //Typed text
 
-var changingtext = new Typed (".worktitle", {
+let changingtext = new Typed (".worktitle", {
     strings: ["Web Developer", "Movie Lover", "Fast learner"],
     typeSpeed: 100,
     backSpeed: 100, 
     loop: true,
 })
 
+let loading = new Typed (".showloader", {
+    strings: ["Loading..."],
+    typeSpeed: 50,
+    backSpeed: 50, 
+    loop: true,
+})
 
+//loader
+
+const loader = document.querySelector("#loader")
+
+window.addEventListener ("load", function () {
+    setTimeout(() => {
+        loader.style.display = "none"
+    }, 3000);
+})

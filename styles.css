@@ -26,6 +26,29 @@ html {
     color: var(--darkerwhite)
 }
 
+.loader {
+    display: none;
+}
+
+
+.showloader-dad {
+    position: fixed;
+    z-index: 6;
+}
+
+.showloader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--Jacketbrown);
+    color: var(--darkerwhite);
+    position: absolute;
+    font-weight:bolder;
+}
+
 body {
     width: fit-content;
     height: max-content;
@@ -48,6 +71,7 @@ p {
     border-radius: 3%;
     margin-left: 20%;
     margin-right: 20%;
+    z-index: 5;
 }
 
 nav {
@@ -60,6 +84,7 @@ nav {
     width: 60%;
     background-color: var(--whitebg);
     border-radius: 30%;
+    
 }
 
 
