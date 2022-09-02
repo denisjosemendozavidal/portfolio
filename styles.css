@@ -281,7 +281,6 @@ body {
 
 /*Beginning of the styles, for the biggest screens*/
 
-
 a {
     text-decoration: none;
     color: black;
@@ -476,19 +475,19 @@ nav {
 
 /*Styles for tablets and/or smaller monitors*/
 
-@media (max-width: 1050px) {
-    body {
-        width: fit-content;
-        height: max-content;
-        background-color: var(--whitebg);
-    }
+@media (max-width: 1250px) {
+   
     
     .container-everything {
         height: fit-content; 
         width: 80%;
-        margin-left: 0%;
+        margin-left: 2%;
         margin-right: 0%;
         border-radius: 3%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20%;
     }
     
     nav {
@@ -514,22 +513,19 @@ nav {
         gap: 1%;  
         padding-top: 6%; 
         flex-direction: column;
+        height: fit-content;
+        width: 100%;
     
     }
         .selfie {
             display: flex;
+            justify-content: flex-start;
             height: fit-content;
             width: fit-content;
             align-items: center;
             align-self:center;
-
         }
 
-        .pic {
-            height: 500px;
-            width: 500px;
-            align-self: flex-end;
-        }
     
         .worktitleandintroandsocial {
             display: flex;
@@ -538,6 +534,7 @@ nav {
             align-content: space-between;
             width: 100%;
             text-align: center;
+            
         }
         
             .worktitleandintroandsocial .worktitle {
@@ -568,12 +565,34 @@ nav {
     #Background {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         gap: 5%;  
         padding-top: 3%; 
         text-align: center;
-        height: fit-content;
+        height: 400px;
     }
+
+    #Skills {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        gap: 5%;  
+        padding-top: 10%; 
+        text-align: center;
+    }
+    
+        .container-of-skills {
+            display: flex;
+            justify-content: space-evenly;
+            padding-top: 2%;
+        }
+    
+        .container-of-skills > img {
+            height: 300px;
+            width: 30%;
+        }
+    
                     
 
     #Other {
@@ -588,13 +607,13 @@ nav {
         .theotherjobs {
             display: flex;
             flex-direction: column;
+            justify-content: flex-start;
             gap: 1%;
             margin-left: 5%;
             margin-right: 5%;
             align-items: flex-start;
+            height: 450px;
         }
-
-      
 
         /*The flip cards*/
 
@@ -605,7 +624,7 @@ nav {
             width: 100%;
             height: fit-content;
             perspective: 1000px; 
-            padding-top: 1%;
+            padding-top: 1%;  
         }
         
         .flip-card-inner-selfie {
@@ -619,7 +638,7 @@ nav {
         
         .flip-card-selfie:hover .flip-card-inner-selfie {
             transform: rotateY(180deg);
-            height: 150px;
+            height: 500px;
         }
         
         .flip-card-front-selfie, .flip-card-back-selfie {
@@ -631,21 +650,22 @@ nav {
         }
         
         .flip-card-front-selfie {
-            background-color: var(--whitebg);
-            color: black;
             padding: 1%;
+            height: 300px;
+            position: absolute;
         }
 
-        .flip-card-front-selfie > img {
-            height: 200px;
-        }
+            .flip-card-front-selfie > img {
+                height: 300px;
+                width: 100%;
+            }
         
         .flip-card-back-selfie {
-            background-color: var(--Jacketbrown);
-            color: var(--darkerwhite);
             transform: rotateY(180deg);
-            line-height: 20%;
             padding: 1%;
+            position: relative;
+            background-color: transparent;
+            
         }
 
 
@@ -685,6 +705,8 @@ nav {
             color: black;
             padding: 1%;
         }
+
+            
         
         .flip-card-back-WhoIam {
             background-color: var(--Jacketbrown);
@@ -698,9 +720,9 @@ nav {
         .flip-card-loaals {
             background-color: transparent;
             width: 100%;
-            
             perspective: 1000px; 
             padding-bottom: 3%;
+            height: 250px;
         }
         
         .flip-card-inner-loaals {
@@ -727,6 +749,10 @@ nav {
             background-color: var(--whitebg);
             color: black;
         }
+
+            .flip-card-front-loaals > img {
+                width: 80%;
+            }
         
         .flip-card-back-loaals {
             background-color: var(--Jacketbrown);
@@ -734,14 +760,16 @@ nav {
             transform: rotateY(-180deg);
         }
 
+
+
         /* The flip card - Job #2*/
 
         .flip-card-gototruckers {
             background-color: transparent;
             width: 100%;
-            
             perspective: 1000px; 
             padding-bottom: 3%;
+           
         }
         
         .flip-card-inner-gototruckers {
@@ -768,6 +796,10 @@ nav {
             background-color: var(--whitebg);
             color: black;
         }
+
+            .flip-card-front-gototruckers > img {
+                width: 80%;
+            }
         
         .flip-card-back-gototruckers {
             background-color: var(--Jacketbrown);
@@ -776,56 +808,15 @@ nav {
         }
 
 
-        /* The flip card - Job #3*/
-
-        .flip-card-entrepreneur {
-            background-color: transparent;
-            width: 100%;
-            height: 100px;
-            perspective: 1000px; 
-            padding-bottom: 3%;
-        }
-        
-        .flip-card-inner-entrepreneur {
-            position: relative;
-            width: 100%;
-            text-align: center;
-            transition: transform 0.8s;
-            transform-style: preserve-3d;
-        }
-        
-        .flip-card-entrepreneur:hover .flip-card-inner-entrepreneur {
-            transform: rotateY(-180deg);
-            height: 200px;
-        }
-        
-        .flip-card-front-entrepreneur, .flip-card-back-entrepreneur {
-            /*position: absolute;*/
-            width: 90%;
-            -webkit-backface-visibility: hidden; 
-            backface-visibility: hidden;
-        }
-        
-        .flip-card-front-entrepreneur {
-            background-color: var(--whitebg);
-            color: black;
-        }
-        
-        .flip-card-back-entrepreneur {
-            background-color: var(--Jacketbrown);
-            color: var(--darkerwhite);
-            transform: rotateY(-180deg);
-        }    
 
 }
 
-/*Styles for big cells*/
+/*Styles for cells*/
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
     h2 {
         font-size: large;
     }
-
 
     p {
         line-height: 130%;
@@ -847,6 +838,10 @@ nav {
         border-radius: 3%;
     }
     
+    header {
+        width: 100%;
+    }
+
     .nav__show {
         display: flex;
         flex-direction: column;
@@ -860,8 +855,6 @@ nav {
     
     
     nav {
-        
-        
         display: none;
     }
 
@@ -869,12 +862,10 @@ nav {
             padding: 1%;
         }
 
-       
 
         .burger {
             visibility: visible;
             align-self: center;
-            justify-content: center;
             display: block;
             width: 100%;
             text-align: center;
@@ -886,22 +877,24 @@ nav {
 
     #Hi {
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         gap: 1%;  
-        padding-top: 6%; 
+        padding-top: 1%; 
         flex-direction: column;
         margin-left: 1%;
         margin-right: 1%;
+        height: 600px;
     }
        
-
-
-        .pic {
-            height: 300px;
-            width: 300px;
-            align-self: flex-end;
+        .selfie {
+            display: flex;
+            justify-content: flex-start;
+            height: fit-content;
+            width: fit-content;
+            align-items: center;
+            align-self:center;
         }
-    
+
         .worktitleandintroandsocial {
             display: flex;
             flex-direction: column;
@@ -969,9 +962,8 @@ nav {
         .flip-card-selfie {
             background-color: transparent;
             width: 100%;
-            height: fit-content;
             perspective: 1000px; 
-            padding-top: 1%;
+            padding-top: 2%;
         }
         
         .flip-card-inner-selfie {
@@ -985,11 +977,11 @@ nav {
         
         .flip-card-selfie:hover .flip-card-inner-selfie {
             transform: rotateY(180deg);
-            height: 150px;
+            height: 400px;
         }
         
         .flip-card-front-selfie, .flip-card-back-selfie {
-            position: absolute;
+           /* position: absolute;*/
             width: 100%;
             height: fit-content;
             -webkit-backface-visibility: hidden; 
@@ -1000,17 +992,17 @@ nav {
             background-color: var(--whitebg);
             color: black;
             padding: 1%;
+            width: 100%;
         }
 
-        .flip-card-front-selfie > img {
-            height: 200px;
-        }
+            .flip-card-front-selfie > img {
+                width: 100%;
+            }
         
         .flip-card-back-selfie {
-            background-color: var(--Jacketbrown);
+            background-color: transparent;
             color: var(--darkerwhite);
             transform: rotateY(180deg);
-            line-height: 20%;
             padding: 1%;
         }
 
