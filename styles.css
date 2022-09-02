@@ -972,7 +972,14 @@ nav {
         width: 90%;
         margin-left: 0%;
         margin-right: 0%;
+        height: 700px;
     }
+
+        .theotherjobs {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
         
         /*The flip cards*/
 
@@ -1077,6 +1084,7 @@ nav {
             width: 100%;
             perspective: 1000px; 
             padding-bottom: 3%;
+            height: 300px;
         }
         
         .flip-card-inner-loaals {
@@ -1089,7 +1097,7 @@ nav {
         
         .flip-card-loaals:hover .flip-card-inner-loaals {
             transform: rotateY(-180deg);
-            height: 200px;
+            height: 500px;
         }
         
         .flip-card-front-loaals, .flip-card-back-loaals {
@@ -1101,7 +1109,7 @@ nav {
         
         .flip-card-front-loaals {
             background-color: var(--whitebg);
-            color: black;
+            
         }
         
         .flip-card-back-loaals {
@@ -1117,6 +1125,7 @@ nav {
             width: 100%;
             perspective: 1000px; 
             padding-bottom: 3%;
+            
         }
         
         .flip-card-inner-gototruckers {
@@ -1125,11 +1134,12 @@ nav {
             text-align: center;
             transition: transform 0.8s;
             transform-style: preserve-3d;
+            height: max-content;
         }
         
         .flip-card-gototruckers:hover .flip-card-inner-gototruckers {
             transform: rotateY(-180deg);
-            height: 200px;
+            height: 500px;
         }
         
         .flip-card-front-gototruckers, .flip-card-back-gototruckers {
@@ -1149,6 +1159,7 @@ nav {
             color: var(--darkerwhite);
             transform: rotateY(-180deg);
             margin-left: 1%;
+            
         }
 
 
