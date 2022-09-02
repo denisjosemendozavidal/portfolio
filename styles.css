@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
 
+/*Over all styles*/
+
 html {
     scroll-behavior: smooth;
 }
@@ -26,10 +28,200 @@ html {
     color: var(--darkerwhite)
 }
 
+
+/*The flip cards*/
+
+/* The flip card - for who I am*/
+.flip-card-WhoIam {
+    background-color: transparent;
+    width: 100%;
+    height: fit-content;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; 
+    padding-top: 3%;
+  }
+  
+  .flip-card-inner-WhoIam {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card-WhoIam:hover .flip-card-inner-WhoIam {
+    transform: rotateY(180deg);
+    height: 100px;
+  }
+  
+  .flip-card-front-WhoIam, .flip-card-back-WhoIam {
+    position: absolute;
+    width: 100%;
+    height: fit-content;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front-WhoIam {
+    background-color: var(--whitebg);
+    color: black;
+    padding: 3%;
+  }
+  
+  .flip-card-back-WhoIam {
+    background-color: var(--Jacketbrown);
+    color: var(--darkerwhite);
+    transform: rotateY(180deg);
+    line-height: 20%;
+    padding: 3%;
+  }
+
+/* The flip card - Job #1*/
+.flip-card-loaals {
+    background-color: transparent;
+    width: 100%;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; 
+    padding-top: 3%;
+    
+  }
+  
+  .flip-card-inner-loaals {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    
+  }
+  
+  .flip-card-loaals:hover .flip-card-inner-loaals {
+    transform: rotateY(-180deg);
+    height: 100px;
+  }
+  
+  .flip-card-front-loaals, .flip-card-back-loaals {
+    position: absolute;
+    width: 100%;
+    height: fit-content;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front-loaals {
+    background-color: var(--whitebg);
+    color: black;
+    padding: 3%;
+    ;
+  }
+  
+  .flip-card-back-loaals {
+    background-color: var(--Jacketbrown);
+    color: var(--darkerwhite);
+    transform: rotateY(-180deg);
+    padding: 3%;
+  }
+
+/* The flip card - Job #2*/
+
+.flip-card-gototruckers {
+    background-color: transparent;
+    width: 100%;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; 
+    padding-top: 3%;
+  }
+  
+  .flip-card-inner-gototruckers {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card-gototruckers:hover .flip-card-inner-gototruckers {
+    transform: rotateY(-180deg);
+    height: 200px;
+  }
+  
+  .flip-card-front-gototruckers, .flip-card-back-gototruckers {
+    position: absolute;
+    width: 100%;
+    height: fit-content;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front-gototruckers {
+    background-color: var(--whitebg);
+    color: black;
+    padding: 3%;
+  }
+  
+  .flip-card-back-gototruckers {
+    background-color: var(--Jacketbrown);
+    color: var(--darkerwhite);
+    transform: rotateY(-180deg);
+    padding: 3%;
+    height: fit-content;
+  }
+
+
+/* The flip card - Job #3*/
+
+.flip-card-entrepreneur {
+    background-color: transparent;
+    width: 100%;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; 
+    padding-top: 3%;
+  }
+  
+  .flip-card-inner-entrepreneur {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card-entrepreneur:hover .flip-card-inner-entrepreneur {
+    transform: rotateY(-180deg);
+    height: 300px;
+  }
+  
+  .flip-card-front-entrepreneur, .flip-card-back-entrepreneur {
+    /*position: absolute;*/
+    width: 90%;
+    height: fit-content;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front-entrepreneur {
+    background-color: var(--whitebg);
+    color: black;
+    padding: 3%;
+  }
+  
+  .flip-card-back-entrepreneur {
+    background-color: var(--Jacketbrown);
+    color: var(--darkerwhite);
+    transform: rotateY(-180deg);
+    padding: 3%;
+    height: fit-content;
+  }
+
+/*The loader*/
+
 .loader {
     display: none;
 }
-
 
 .showloader-dad {
     position: fixed;
@@ -48,6 +240,8 @@ html {
     position: absolute;
     font-weight:bolder;
 }
+
+/*Beginning of the styles, for the biggest screens*/
 
 body {
     width: fit-content;
@@ -86,7 +280,6 @@ nav {
     border-radius: 30%;
     
 }
-
 
     .nav a:hover {
         color: var(--Jacketbrown);
@@ -176,7 +369,7 @@ nav {
     .backgroundtext {
         padding-top: 1%;
         height: fit-content;
-        line-height: 200%;
+        
     } 
 
 #Experience {
@@ -195,33 +388,19 @@ nav {
     flex-direction: column;
     justify-content: center;
     gap: 5%;  
-    padding-top: 3%; 
+    padding-top: 10%; 
     text-align: center;
+    width: 100%;
 }
 
     .theotherjobs {
         display: flex;
-        flex-direction: column;
         justify-content: center;
-        gap: 10%;
-        padding-top: 2%;
+        align-content: center;
         width: 100%;
+        height: fit-content;
     }
 
-        .loaalss {
-            padding-top: 1%;
-            
-        }
-
-        .gototruckers {
-            padding-top: 3%;
-            
-        }
-
-        .entrepreneur {
-            padding-top: 3%;
-            
-        }
 
 #Contact {
     display: flex;
@@ -239,6 +418,8 @@ nav {
         gap: 5%;
         padding-top: 2%;
     }
+
+/*Styles for tablets and/or smaller monitors*/
 
 @media (max-width: 1050px) {
     body {
@@ -339,48 +520,200 @@ nav {
         height: fit-content;
     }
                     
-        .backgroundtext {
-            padding-top: 1%;
-            height: 200px;
-            line-height: 200%;
-            height: fit-content;
-        } 
 
     #Other {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        gap: 5%;  
-        padding-top: 3%; 
+        justify-content: center; 
         text-align: center;
         width: 100%;
+        height: fit-content;
     }
         
         .theotherjobs {
             display: flex;
             flex-direction: column;
-            gap: 0%;
+            gap: 1%;
             margin-left: 5%;
             margin-right: 5%;
-            padding-top: 2%;
+            align-items: flex-start;
+        }
+
+      
+
+        /*The flip cards*/
+
+        /* The flip card - for who I am*/
+        .flip-card-WhoIam {
+            background-color: transparent;
+            width: 100%;
+            height: fit-content;
+            perspective: 1000px; 
+            padding-top: 1%;
         }
         
-        .loaalss {
-            padding-top: 3%;
+        .flip-card-inner-WhoIam {
+            position: relative;
             width: 100%;
+            height: fit-content;
+            text-align: center;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+        }
+        
+        .flip-card-WhoIam:hover .flip-card-inner-WhoIam {
+            transform: rotateY(180deg);
+            height: 100px;
+        }
+        
+        .flip-card-front-WhoIam, .flip-card-back-WhoIam {
+            position: absolute;
+            width: 100%;
+            height: fit-content;
+            -webkit-backface-visibility: hidden; 
+            backface-visibility: hidden;
+        }
+        
+        .flip-card-front-WhoIam {
+            background-color: var(--whitebg);
+            color: black;
+            padding: 1%;
+        }
+        
+        .flip-card-back-WhoIam {
+            background-color: var(--Jacketbrown);
+            color: var(--darkerwhite);
+            transform: rotateY(180deg);
+            line-height: 20%;
+            padding: 1%;
         }
 
-        .gototruckers {
-            padding-top: 3%;
+        /* The flip card - Job #1*/
+        .flip-card-loaals {
+            background-color: transparent;
             width: 100%;
+            
+            perspective: 1000px; 
+            padding-bottom: 3%;
+        }
+        
+        .flip-card-inner-loaals {
+            position: relative;
+            width: 100%;
+            text-align: center;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+        }
+        
+        .flip-card-loaals:hover .flip-card-inner-loaals {
+            transform: rotateY(-180deg);
+            height: 200px;
+        }
+        
+        .flip-card-front-loaals, .flip-card-back-loaals {
+            position: absolute;
+            width: 100%;
+            -webkit-backface-visibility: hidden; 
+            backface-visibility: hidden;
+        }
+        
+        .flip-card-front-loaals {
+            background-color: var(--whitebg);
+            color: black;
+        }
+        
+        .flip-card-back-loaals {
+            background-color: var(--Jacketbrown);
+            color: var(--darkerwhite);
+            transform: rotateY(-180deg);
         }
 
-        .entrepreneur {
-            padding-top: 3%;
+        /* The flip card - Job #2*/
+
+        .flip-card-gototruckers {
+            background-color: transparent;
             width: 100%;
+            
+            perspective: 1000px; 
+            padding-bottom: 3%;
         }
+        
+        .flip-card-inner-gototruckers {
+            position: relative;
+            width: 100%;
+            text-align: center;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+        }
+        
+        .flip-card-gototruckers:hover .flip-card-inner-gototruckers {
+            transform: rotateY(-180deg);
+            height: 100px;
+        }
+        
+        .flip-card-front-gototruckers, .flip-card-back-gototruckers {
+            position: absolute;
+            width: 100%;
+            -webkit-backface-visibility: hidden; 
+            backface-visibility: hidden;
+        }
+        
+        .flip-card-front-gototruckers {
+            background-color: var(--whitebg);
+            color: black;
+        }
+        
+        .flip-card-back-gototruckers {
+            background-color: var(--Jacketbrown);
+            color: var(--darkerwhite);
+            transform: rotateY(-180deg);
+        }
+
+
+        /* The flip card - Job #3*/
+
+        .flip-card-entrepreneur {
+            background-color: transparent;
+            width: 100%;
+            height: 100px;
+            perspective: 1000px; 
+            padding-bottom: 3%;
+        }
+        
+        .flip-card-inner-entrepreneur {
+            position: relative;
+            width: 100%;
+            text-align: center;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+        }
+        
+        .flip-card-entrepreneur:hover .flip-card-inner-entrepreneur {
+            transform: rotateY(-180deg);
+            height: 200px;
+        }
+        
+        .flip-card-front-entrepreneur, .flip-card-back-entrepreneur {
+            /*position: absolute;*/
+            width: 90%;
+            -webkit-backface-visibility: hidden; 
+            backface-visibility: hidden;
+        }
+        
+        .flip-card-front-entrepreneur {
+            background-color: var(--whitebg);
+            color: black;
+        }
+        
+        .flip-card-back-entrepreneur {
+            background-color: var(--Jacketbrown);
+            color: var(--darkerwhite);
+            transform: rotateY(-180deg);
+        }    
 
 }
+
+/*Styles for cells*/
 
 @media (max-width: 700px) {
     h2 {
@@ -515,52 +848,21 @@ nav {
         height: fit-content;
     }
                     
-        .backgroundtext {
-            margin-left: 0%;
-            margin-right: 0%;
-            padding-top: 1%;
-            height: fit-content;
-        }
+       
 
     #Other {
         display: flex;
         flex-direction: column;
         justify-content: center;
         gap: 5%;  
-        padding-top: 3%; 
+        padding-top: 5%; 
         text-align: center;
         width: 100%;
         margin-left: 1%;
         margin-right: 1%;
     }
         
-        .theotherjobs {
-            display: flex;
-            flex-direction: column;
-            gap: 0%;
-            margin-left: 0%;
-            margin-right: 0%;
-            padding-top: 2%;
-            margin-right: 1%;
-        }
         
-        .loaalss {
-            padding-top: 3%;
-            width: 100%;
-            margin-right: 3%;
-        }
-
-        .gototruckers {
-            padding-top: 3%;
-            width: 100%;
-            margin-right: 3%;
-        }
-
-        .entrepreneur {
-            padding-top: 3%;
-            width: 100%;
-            margin-right: 3%;
-        }
 
 }
 
