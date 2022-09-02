@@ -97,6 +97,7 @@ html {
     border: 1px solid #f1f1f1;
     perspective: 1000px; 
     padding-top: 3%;
+    height: 350px;
   }
   
   .flip-card-inner-WhoIam {
@@ -125,7 +126,13 @@ html {
     background-color: var(--whitebg);
     color: black;
     padding: 3%;
+    height: 350px;
   }
+
+    /*This is for the img calls pic*/
+    .flip-card-front-WhoIam > img {
+        height: 350px;
+    }
   
   .flip-card-back-WhoIam {
     background-color: var(--Jacketbrown);
@@ -157,7 +164,7 @@ html {
   
   .flip-card-loaals:hover .flip-card-inner-loaals {
     transform: rotateY(-180deg);
-    height: 100px;
+    height: 300px;
   }
   
   .flip-card-front-loaals, .flip-card-back-loaals {
@@ -174,6 +181,11 @@ html {
     padding: 3%;
     ;
   }
+
+    .flip-card-front-loaals > img {
+        width: 100%;
+        height: 200px;
+    }
   
   .flip-card-back-loaals {
     background-color: var(--Jacketbrown);
@@ -419,11 +431,27 @@ nav {
     height: fit-content;
 }
     
-    .backgroundtext {
-        padding-top: 1%;
-        height: fit-content;
-        
-    } 
+
+#Skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 5%;  
+    padding-top: 10%; 
+    text-align: center;
+}
+
+    .container-of-skills {
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 2%;
+    }
+
+    .container-of-skills > img {
+        height: 300px;
+        width: 30%;
+    }
 
 #Experience {
     display: flex;
@@ -431,9 +459,16 @@ nav {
     justify-content: center;
     align-content: center;
     gap: 5%;  
-    padding-top: 3%; 
+    padding-top: 5%; 
     text-align: center;
 }
+
+    .container-of-experience {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        gap: 3%;
+    }
 
 
 #Other {
