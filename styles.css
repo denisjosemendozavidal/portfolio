@@ -457,6 +457,10 @@ nav {
             padding: 1%;
         }
 
+            .portfolio > a > img {
+                width: 100%;
+            }
+
             .portfolio:hover h3{
                 width: 60%;
                 transition: 1s;
@@ -1041,7 +1045,7 @@ nav {
             width: 30%;
         } 
 
-        #Experience {
+    #Experience {
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -1069,6 +1073,11 @@ nav {
                     line-height: 200%;
                     padding-top: 1%;
                 }
+
+                    .portfolio > a > img {
+                        width: 100%;
+                    }
+                   
         
                     .portfolio:hover h3{
                         width: 60%;
@@ -1091,6 +1100,10 @@ nav {
                     width: 90%;
                     padding-top: 3%;
                 }
+
+                    .ecommerce > a > img {
+                        width: 100%;
+                    }
         
                     .ecommerce:hover h3{
                         width: 60%;
