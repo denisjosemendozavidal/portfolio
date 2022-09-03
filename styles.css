@@ -1387,7 +1387,8 @@ nav {
         .flip-card-front-WhoIam {
             background-color: var(--whitebg);
             color: black;
-            padding: 1%;
+            padding: 3%;
+            
         }
 
 
