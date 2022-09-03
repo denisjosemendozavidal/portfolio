@@ -398,6 +398,14 @@ nav {
     width: 100%;
     height: fit-content;
 }
+
+    .video-for-bigscreens {
+        visibility: visible;
+    }
+
+    .video-for-cells {
+        display: none;
+    }
     
 
 #Skills {
@@ -575,6 +583,16 @@ nav {
         text-align: center;
         height: 400px;
     }
+
+        .video-for-bigscreens {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .video-for-cells {
+            display: none;
+        }
 
     #Skills {
         display: flex;
@@ -944,6 +962,15 @@ nav {
         height: 400px;
         width: 90%;
     }
+
+        .video-for-bigscreens {
+            display: none;
+        }
+
+        .video-for-cells {
+            display: flex;
+            align-items: center;
+        }
                     
     #Skills {
         display: flex;
@@ -1082,9 +1109,7 @@ nav {
             padding: 1%;
         }
 
-            .flip-card-back-WhoIam {
-                width: 300px;
-            }
+            
 
 
         /* The flip card - Job #1*/
