@@ -33,3 +33,7 @@ window.addEventListener ("load", function () {
         loader.style.display = "none"
     }, 3000);
 })
+
+//slider 
+
+
