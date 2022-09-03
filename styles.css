@@ -969,7 +969,8 @@ nav {
 
         .video-for-cells {
             display: flex;
-            align-items: center;
+            align-items: flex-start;
+            justify-content: flex-start;
         }
                     
     #Skills {
