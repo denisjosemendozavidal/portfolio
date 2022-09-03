@@ -1057,7 +1057,6 @@ nav {
                 align-items: center;
                 justify-content: space-evenly;
                 width: 100%;
-                gap: 3%;
                 padding-top: 3%;
             }
         
@@ -1066,7 +1065,7 @@ nav {
                     flex-direction: column;
                     justify-content: center;
                     align-content: space-between;
-                    width: 45%;
+                    width: 90%;
                     line-height: 200%;
                     padding-top: 1%;
                 }
@@ -1089,7 +1088,7 @@ nav {
                     flex-direction: column;
                     justify-content: center;
                     align-content: space-between;
-                    width: 45%;
+                    width: 90%;
                     padding-top: 3%;
                 }
         
