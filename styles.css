@@ -113,6 +113,8 @@ body {
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
+    background-color: transparent;
+    
   }
   
   .flip-card-WhoIam:hover .flip-card-inner-WhoIam {
@@ -129,7 +131,7 @@ body {
   }
   
   .flip-card-front-WhoIam {
-    background-color: var(--whitebg);
+    background-color: transparent;
     color: black;
     padding: 3%;
     height: 350px;
@@ -141,12 +143,14 @@ body {
     }
   
   .flip-card-back-WhoIam {
-    background-color: var(--Jacketbrown);
+    background-color: transparent;
     color: var(--darkerwhite);
     transform: rotateY(180deg);
     line-height: 20%;
     padding: 3%;
   }
+
+    
 
 /* The flip card - Job #1*/
 .flip-card-loaals {
@@ -709,7 +713,7 @@ nav {
             
         
         .flip-card-back-WhoIam {
-            background-color: var(--Jacketbrown);
+            background-color: transparent;
             color: var(--darkerwhite);
             transform: rotateY(180deg);
             line-height: 20%;
@@ -1069,14 +1073,19 @@ nav {
             color: black;
             padding: 1%;
         }
-        
+
+
         .flip-card-back-WhoIam {
-            background-color: var(--Jacketbrown);
-            color: var(--darkerwhite);
+            background-color: transparent;
             transform: rotateY(180deg);
             line-height: 20%;
             padding: 1%;
         }
+
+            .flip-card-back-WhoIam {
+                width: 300px;
+            }
+
 
         /* The flip card - Job #1*/
         .flip-card-loaals {
