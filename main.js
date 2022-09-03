@@ -35,7 +35,7 @@ window.addEventListener ("load", function () {
 
 //SLider for skills
 
-var counter = 1;
+let counter = 1;
       setInterval(function(){
         document.getElementById('radio' + counter).checked = true;
         counter++;

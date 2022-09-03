@@ -1135,7 +1135,9 @@ nav {
             align-items: flex-start;
             justify-content: flex-start;
         }
-                    
+
+/*Styles of slider for Cells*/
+
     #Skills {
         display: flex;
         flex-direction: column;
@@ -1144,22 +1146,67 @@ nav {
         gap: 5%;  
         padding-top: 10%; 
         text-align: center;
+        height: 400px;
     }
     
-        .container-of-skills {
+        .container-slider {
+            width: 80%;
             display: flex;
             flex-direction: column;
-            padding-top: 2%;
-        }
-    
-        .container-of-skills > img {
-            height: 100%;
-            width: 100%;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
             padding: 2%;
-            border-radius: 10%;
-        } 
+            align-self: center;
+            height: 300px;
+        }   
 
+            .container-slider > .slider > .slides > div > img {
+                height: 300px;
+            }
+
+
+        .navigation-manual{
+            position: absolute;
+            width: 50%;
+            margin-top: -65%;
+            display: flex;
+            justify-content: center;
+        }
         
+        .manual-btn{
+            border: 2px solid var(--purple);
+            padding: 5%;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: 1s;
+        }
+        
+        .manual-btn:not(:last-child){
+            margin-right: 10%;
+        }
+        
+        .manual-btn:hover{
+            background: var(--darkerwhite);
+        }
+        
+        #radio1:checked ~ .first{
+            margin-left: 0;
+        }
+        
+        #radio2:checked ~ .first{
+            margin-left: -20%;
+        }
+        
+        #radio3:checked ~ .first{
+            margin-left: -40%;
+        }
+        
+        #radio4:checked ~ .first{
+            margin-left: -60%;
+        }
+
+        /*Slider for Cells ends here*/    
 
     #Experience {
             display: flex;
