@@ -5,7 +5,6 @@ const Nav = document.querySelector("#Nav");
 
 Burger.addEventListener("click", function () {
     Nav.classList.toggle("nav__show");
-    console.log(Nav);
 });
  
 //Typed text
@@ -34,6 +33,15 @@ window.addEventListener ("load", function () {
     }, 3000);
 })
 
+//SLider for skills
 
+var counter = 1;
+      setInterval(function(){
+        document.getElementById('radio' + counter).checked = true;
+        counter++;
+        if(counter > 4){
+          counter = 1;
+        }
+      }, 3000);
 
 

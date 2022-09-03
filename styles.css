@@ -33,6 +33,7 @@ body {
     height: max-content;
     background-color: var(--whitebg);
     display: flex;
+    background-color: var(--darkerwhite);
 }
 
 /*The flip cards*/
@@ -303,7 +304,7 @@ p {
     margin-left: 25%;
     margin-right: 15%;
     z-index: 5;
-    
+    background-color: var(--whitebg);
 }
 
 nav {
@@ -317,6 +318,7 @@ nav {
     background-color: var(--whitebg);
     border-radius: 30%;
     z-index: 5;
+    
 }
 
     .nav a:hover {
@@ -407,7 +409,7 @@ nav {
         display: none;
     }
     
-
+/*Slider for skills starts here*/
 #Skills {
     display: flex;
     flex-direction: column;
@@ -416,19 +418,128 @@ nav {
     gap: 5%;  
     padding-top: 10%; 
     text-align: center;
+    justify-content: center;
 }
 
-    .container-of-skills {
+    .container-slider {
+        width: 80%;
         display: flex;
-        justify-content: space-evenly;
-        padding-top: 2%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        padding: 2%;
+        align-self: center;
+    }
+    
+    .slider{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    
+    .slides{
+        width: 500%;
+        height: 500px;
+        display: flex;
+    }
+    
+    .slides input{
+        display: none;
+    }
+    
+    .slide{
+        width: 20%;
+        transition: 2s;
+    }
+    
+    .slide img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    /*css for manual slide navigation*/
+    
+    .navigation-manual{
+        position: absolute;
+        width: 50%;
+        margin-top: -3%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .manual-btn{
+        border: 2px solid var(--darkerwhite);
+        padding: 1%;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: 1s;
+    }
+    
+    .manual-btn:not(:last-child){
+        margin-right: 5%;
+    }
+    
+    .manual-btn:hover{
+        background: var(--darkerwhite);
+    }
+    
+    #radio1:checked ~ .first{
+        margin-left: 0;
+    }
+    
+    #radio2:checked ~ .first{
+        margin-left: -20%;
+    }
+    
+    #radio3:checked ~ .first{
+        margin-left: -40%;
+    }
+    
+    #radio4:checked ~ .first{
+        margin-left: -60%;
+    }
+    
+    /*css for automatic navigation*/
+    
+    .navigation-auto{
+        position: absolute;
+        display: flex;
+        width: 50%;
+        justify-content: center;
+        margin-top: 25%;
+        visibility: hidden;
+    }
+    
+    .navigation-auto div{
+        border: 2px solid fuchsia;
+        padding: 1%;
+        border-radius: 50%;
+        transition: 1s;
+    }
+    
+    .navigation-auto div:not(:last-child){
+        margin-right: 5%;
+    }
+    
+    #radio1:checked ~ .navigation-auto .auto-btn1{
+        background: fuchsia;
+    }
+    
+    #radio2:checked ~ .navigation-auto .auto-btn2{
+        background: fuchsia;
+    }
+    
+    #radio3:checked ~ .navigation-auto .auto-btn3{
+        background: fuchsia;
+    }
+    
+    #radio4:checked ~ .navigation-auto .auto-btn4{
+        background: fuchsia;
     }
 
-    .container-of-skills > img {
-        height: 300px;
-        width: 30%;
-        border-radius: 10%;
-    }
+/*Slider of skills ends here*/
 
 #Experience {
     display: flex;
