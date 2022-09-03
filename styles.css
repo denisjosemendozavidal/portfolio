@@ -441,11 +441,58 @@ nav {
 
     .container-of-experience {
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         width: 100%;
         gap: 3%;
+        padding-top: 3%;
     }
 
+        .portfolio {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: space-between;
+            width: 45%;
+            line-height: 200%;
+            padding: 1%;
+        }
+
+            .portfolio:hover h3{
+                width: 60%;
+                transition: 1s;
+                font-size: xx-large;
+                transition: 1s;
+            }
+
+                .portfolio h3:hover a{
+                    color: var(--Jacketbrown);
+                }
+
+                
+
+        .ecommerce {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: space-between;
+            width: 45%;
+            padding: 1%;
+        }
+
+            .ecommerce:hover h3{
+                width: 60%;
+                border-radius: 50%;
+                transition: 1s;
+                width: fit-content;
+                font-size: xx-large;
+                transition: 1s;
+            }
+
+                .ecommerce h3:hover a{
+                    color: var(--Jacketbrown);
+                }
+
+                
 
 #Other {
     display: flex;
@@ -994,6 +1041,72 @@ nav {
             width: 30%;
         } 
 
+        #Experience {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            gap: 5%;  
+            padding-top: 5%; 
+            text-align: center;
+        }
+        
+            .container-of-experience {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+                width: 100%;
+                gap: 3%;
+                padding-top: 3%;
+            }
+        
+                .portfolio {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-content: space-between;
+                    width: 45%;
+                    line-height: 200%;
+                    padding-top: 1%;
+                }
+        
+                    .portfolio:hover h3{
+                        width: 60%;
+                        transition: 1s;
+                        font-size: xx-large;
+                        transition: 1s;
+                    }
+        
+                        .portfolio h3:hover a{
+                            color: var(--Jacketbrown);
+                        }
+        
+                        
+        
+                .ecommerce {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-content: space-between;
+                    width: 45%;
+                    padding-top: 3%;
+                }
+        
+                    .ecommerce:hover h3{
+                        width: 60%;
+                        border-radius: 50%;
+                        transition: 1s;
+                        width: fit-content;
+                        font-size: xx-large;
+                        transition: 1s;
+                    }
+        
+                        .ecommerce h3:hover a{
+                            color: var(--Jacketbrown);
+                        }
+                    
+
     #Other {
         display: flex;
         flex-direction: column;
@@ -1200,11 +1313,7 @@ nav {
 
 }
 
-/*Styles for regular screens*/
 
-@media (max-width: 350px) {
-    
-}
 
 
     
