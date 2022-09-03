@@ -427,6 +427,7 @@ nav {
     .container-of-skills > img {
         height: 300px;
         width: 30%;
+        border-radius: 10%;
     }
 
 #Experience {
@@ -1036,13 +1037,15 @@ nav {
     
         .container-of-skills {
             display: flex;
-            justify-content: space-evenly;
+            flex-direction: column;
             padding-top: 2%;
         }
     
         .container-of-skills > img {
-            height: 300px;
-            width: 30%;
+            height: 100%;
+            width: 100%;
+            padding: 2%;
+            border-radius: 10%;
         } 
 
         
