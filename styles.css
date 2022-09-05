@@ -1338,13 +1338,14 @@ nav {
         width: 90%;
         margin-left: 0%;
         margin-right: 0%;
-        height: 700px;
+        height: 800px;
     }
 
         .theotherjobs {
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
+            
         }
         
         /*The flip cards*/
@@ -1454,7 +1455,7 @@ nav {
             width: 100%;
             perspective: 1000px; 
             padding-bottom: 3%;
-            height: 300px;
+            height: 500px;
         }
         
         .flip-card-inner-loaals {
@@ -1486,6 +1487,7 @@ nav {
             background-color: var(--ironmansred);
             color: var(--ironmansyellow);
             transform: rotateY(-180deg);
+            
         }
 
         /* The flip card - Job #2*/
@@ -1532,7 +1534,9 @@ nav {
             
         }
 
-
+    #contact {
+        height: fit-content;
+    }
 }
 
 
