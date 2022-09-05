@@ -21,6 +21,9 @@ html {
     --aqua: aqua; 
     --Jacketbrown: #DFBB9D;  
     --darkblue: #002B5B; 
+    --ironmansred: #aa0505;
+    --ironmansyellow: #fbca03;
+    --ironmansgold: #b97d10;
 }
 
 .darkmode {
@@ -205,8 +208,8 @@ body {
     }
   
   .flip-card-back-loaals {
-    background-color: var(--Jacketbrown);
-    color: var(--darkerwhite);
+    background-color: var(--ironmansred);
+    color: var(--ironmansyellow);
     transform: rotateY(-180deg);
     padding: 3%;
   }
@@ -257,8 +260,8 @@ body {
 
   
   .flip-card-back-gototruckers {
-    background-color: var(--Jacketbrown);
-    color: var(--darkerwhite);
+    background-color: var(--ironmansred);
+    color: var(--ironmansyellow);
     transform: rotateY(-180deg);
     padding: 3%;
     height: fit-content;
@@ -284,8 +287,8 @@ body {
     align-content: center;
     width: 100vw;
     height: 100vh;
-    background-color: var(--Jacketbrown);
-    color: var(--darkerwhite);
+    background-color: var(--ironmansred);
+    color: var(--ironmansyellow);
     position: absolute;
     font-weight:bolder;
 }
@@ -328,7 +331,7 @@ nav {
 }
 
     .nav a:hover {
-        color: var(--Jacketbrown);
+        color: var(--ironmansgold);
         border-radius: 20%;
         transition: 1s;
     }
@@ -355,7 +358,7 @@ nav {
     }
     
         .worktitleandintroandsocial .worktitle {
-            color: var(--Jacketbrown);
+            color: var(--ironmansyellow);
             
         }
 
@@ -386,8 +389,9 @@ nav {
 
                 .Linkedinicon:hover {
                 font-size: larger;
-                color: var(--Jacketbrown);
+                color: var(--ironmansred);
                 box-shadow: 0 0.5rem 1rem  rgba(0, 0, 0, 1.15);
+                transition: 1s;
                 }
 
             .githubicon {
@@ -396,8 +400,9 @@ nav {
 
                 .githubicon:hover {
                     font-size: larger;
-                    color: var(--Jacketbrown);
+                    color: var(--ironmansred);
                     box-shadow: 0 0.5rem 1rem  rgba(0, 0, 0, 1.15);
+                    transition: 1s;
                 }
             
             .whatsappicon {
@@ -406,8 +411,9 @@ nav {
 
                 .whatsappicon:hover {
                     font-size: larger;
-                    color: var(--Jacketbrown);
+                    color: var(--ironmansred);
                     box-shadow: 0 0.5rem 1rem  rgba(0, 0, 0, 1.15);
+                    transition: 1s;
                 }
 
 
@@ -714,7 +720,7 @@ nav {
     }
 
         .nav a:hover {
-            color: var(--Jacketbrown);
+            color: var(--ironmansred);
             border-radius: 20%;
             transition: 1s;
         }
@@ -977,8 +983,8 @@ nav {
             }
         
         .flip-card-back-loaals {
-            background-color: var(--Jacketbrown);
-            color: var(--darkerwhite);
+            background-color: var(--ironmansred);
+            color: var(--ironmansyellow);
             transform: rotateY(-180deg);
         }
 
@@ -1024,8 +1030,8 @@ nav {
             }
         
         .flip-card-back-gototruckers {
-            background-color: var(--Jacketbrown);
-            color: var(--darkerwhite);
+            background-color: var(--ironmansred);
+            color: var(--ironmansyellow);
             transform: rotateY(-180deg);
         }
 
@@ -1206,14 +1212,14 @@ nav {
         .navigation-manual{
             position: absolute;
             width: 50%;
-            margin-top: -65%;
+            margin-top: -43%;
             display: flex;
             justify-content: center;
         }
         
         .manual-btn{
-            border: 2px solid var(--purple);
-            padding: 5%;
+            border: 2px solid var(--darkerwhite);
+            padding: 2%;
             border-radius: 50%;
             cursor: pointer;
             transition: 1s;
@@ -1477,8 +1483,8 @@ nav {
         }
         
         .flip-card-back-loaals {
-            background-color: var(--Jacketbrown);
-            color: var(--darkerwhite);
+            background-color: var(--ironmansred);
+            color: var(--ironmansyellow);
             transform: rotateY(-180deg);
         }
 
@@ -1519,8 +1525,8 @@ nav {
         }
         
         .flip-card-back-gototruckers {
-            background-color: var(--Jacketbrown);
-            color: var(--darkerwhite);
+            background-color: var(--ironmansred);
+            color: var(--ironmansyellow);
             transform: rotateY(-180deg);
             margin-left: 1%;
             
