@@ -47,6 +47,7 @@ body {
     perspective: 1000px; 
     padding-top: 1%;
     z-index: 4;
+    box-shadow: 0 0.5rem 1rem  rgba(0, 0, 0, 1.15);
 }
 
 .flip-card-inner-selfie {
@@ -61,6 +62,7 @@ body {
 .flip-card-selfie:hover .flip-card-inner-selfie {
     transform: rotateY(180deg);
     height: 300px;
+    
 }
 
 .flip-card-front-selfie, .flip-card-back-selfie {
@@ -88,6 +90,7 @@ body {
     transform: rotateY(180deg);
     line-height: 20%;
     padding: 1%;
+    
 }
 
     /*This is for the img calls pic*/
@@ -105,6 +108,7 @@ body {
     perspective: 1000px; 
     padding-top: 3%;
     height: 350px;
+    
   }
   
   .flip-card-inner-WhoIam {
@@ -115,6 +119,7 @@ body {
     transition: transform 0.8s;
     transform-style: preserve-3d;
     background-color: transparent;
+    
     
   }
   
@@ -419,6 +424,7 @@ nav {
     padding-top: 10%; 
     text-align: center;
     justify-content: center;
+    
 }
 
     .container-slider {
@@ -437,6 +443,7 @@ nav {
         height: 100%;
         border-radius: 10px;
         overflow: hidden;
+        box-shadow: 0 0.5rem 1rem  rgba(0, 0, 0, 1.15);
     }
     
     .slides{
@@ -567,10 +574,15 @@ nav {
             width: 45%;
             line-height: 200%;
             padding: 1%;
+            box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
         }
 
             .portfolio > a > img {
                 width: 100%;
+            }
+
+            .portfolio:hover {
+                box-shadow: 0 0.5rem 1rem  rgba(0, 0, 0, 1.15);
             }
 
             .portfolio:hover h3{
@@ -593,7 +605,12 @@ nav {
             align-content: space-between;
             width: 45%;
             padding: 1%;
+            box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
         }
+
+            .ecommerce:hover {
+                box-shadow: 0 0.5rem 1rem  rgba(0, 0, 0, 1.15);
+            }
 
             .ecommerce:hover h3{
                 width: 60%;
