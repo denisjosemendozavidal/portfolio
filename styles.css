@@ -47,7 +47,7 @@ body {
     perspective: 1000px; 
     padding-top: 1%;
     z-index: 4;
-    box-shadow: 0 0.5rem 1rem  rgba(0, 0, 0, 1.15);
+    
 }
 
 .flip-card-inner-selfie {
@@ -79,7 +79,7 @@ body {
     padding: 1%;
 }
 
-    /*This is for the img calls pic*/
+    /*This is for the img called pic*/
     .flip-card-front-selfie > img {
         height: 350px;
     }
@@ -379,20 +379,35 @@ nav {
             gap: 3%;
         }
 
-            .Linkedinicon:hover {
-               font-size: larger;
-               color: var(--Jacketbrown);
+            .Linkedinicon {
+                box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
             }
 
-            .githubicon:hover {
+                .Linkedinicon:hover {
                 font-size: larger;
                 color: var(--Jacketbrown);
+                box-shadow: 0 0.5rem 1rem  rgba(0, 0, 0, 1.15);
+                }
+
+            .githubicon {
+                box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
             }
 
-            .whatsappicon:hover {
-                font-size: larger;
-                color: var(--Jacketbrown);
+                .githubicon:hover {
+                    font-size: larger;
+                    color: var(--Jacketbrown);
+                    box-shadow: 0 0.5rem 1rem  rgba(0, 0, 0, 1.15);
+                }
+            
+            .whatsappicon {
+                box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175); 
             }
+
+                .whatsappicon:hover {
+                    font-size: larger;
+                    color: var(--Jacketbrown);
+                    box-shadow: 0 0.5rem 1rem  rgba(0, 0, 0, 1.15);
+                }
 
 
 #Background {
@@ -607,6 +622,10 @@ nav {
             padding: 1%;
             box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
         }
+
+            .ecommerce > a > img {
+               width: 90%; 
+            }
 
             .ecommerce:hover {
                 box-shadow: 0 0.5rem 1rem  rgba(0, 0, 0, 1.15);
@@ -1233,6 +1252,7 @@ nav {
             gap: 5%;  
             padding-top: 5%; 
             text-align: center;
+            height: fit-content;
         }
         
             .container-of-experience {
@@ -1241,7 +1261,9 @@ nav {
                 align-items: center;
                 justify-content: space-evenly;
                 width: 100%;
+                height: 100%;
                 padding-top: 3%;
+                gap: 20px;
             }
         
                 .portfolio {
@@ -1251,7 +1273,7 @@ nav {
                     align-content: space-between;
                     width: 90%;
                     line-height: 200%;
-                    padding-top: 1%;
+                    padding-top: 1%; 
                 }
 
                     .portfolio > a > img {
@@ -1278,7 +1300,7 @@ nav {
                     justify-content: center;
                     align-content: space-between;
                     width: 90%;
-                    padding-top: 3%;
+                    padding-top: 1%;
                 }
 
                     .ecommerce > a > img {
