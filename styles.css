@@ -28,7 +28,8 @@ html {
 
 .darkmode {
     background-color: var(--darkblue);
-    color: var(--darkerwhite)
+    color: var(--darkerwhite);
+    
 }
 
 body {
@@ -38,6 +39,7 @@ body {
     display: flex;
     background-color: var(--darkerwhite);
     font-family: sans-serif;
+    background-image: url("/images/bgimagemovies.jpeg");
 }
 
 /*The flip cards*/
